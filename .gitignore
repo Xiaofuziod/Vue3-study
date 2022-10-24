@@ -1,6 +1,30 @@
 .DS_Store
-node_modules
-/dist
+node_modules/
+unpackage/
+.hbuilderx/
+dist/
+*/*/dist/
+*/*/*/dist/
+src/manifest.json
+src/version.js
+site.zip
+
+
+# 屏蔽iOS sdk app路径
+app/iOS/SDK/
+app/iOS/bohe/HBuilder-Hello/Pandora/apps/
+app/iOS/bohe/HBuilder-Hello.xcodeproj/project.xcworkspace/xcuserdata/wujialei.xcuserdatad/
+
+# 屏蔽android sdk app路径
+app/andriod/SDK/
+app/andriod/bohe/simpleDemo/src/main/assets/apps/
+app/andriod/bohe/simpleDemo/build/
+app/andriod/bohe/simpleDemo/release/
+*/.idea
+*/*/.idea
+*/.gradle/
+*/*/.gradle/
+*/*/*/.gradle/
 
 
 # local env files
@@ -11,13 +35,13 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
 # Editor directories and files
+.project
 .idea
 .vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.sw*
